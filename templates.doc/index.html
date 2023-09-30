@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Video</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f7f7f7;
+            color: #333;
+            background-image: url(https://th.bing.com/th/id/OIG.Z1Z.XXzP91MG18xmF3dm?pid=ImgGn);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            border-color: #007bff;
+        }
+
+        .custom-btn {
+            background-color: #0062cc;
+            color: #ffffff;
+            border-radius: 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .custom-btn:hover {
+            background-color: #f76dc9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Download Video</h1>
+        <p class="project-info" style="font-family: Arial, sans-serif; font-size: 18px; color: #333;">
+            Welcome to our video download page. With this tool, you can easily download your favorite videos from YouTube. Simply enter the URL of the video you want to download and click the "Download" button. Enjoy your videos anytime, anywhere!
+        </p>
+        <form action="/download" method="POST" class="mt-4">
+            <div class="form-group">
+                <label for="url">Video URL:</label>
+                <input type="text" name="url" id="url" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary custom-btn">Download</button>
+        </form>
+    </div>
+</body>
+</html>
